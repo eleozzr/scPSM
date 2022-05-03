@@ -21,11 +21,11 @@ We provide two ways to run our methods. For the fist one, the authors can instal
 
 ### 3.1 using `scPSM` package
 
-Start with the vignette [online](./vignettes/tutorial.Rmd) in `./vignettes/tutorial.Rmd`.
+Start with the vignette [online](./vignettes/tutorial.md) in `./vignettes/tutorial.md`.
 
 ### 3.2 using the main function directly 
 
-To perform scPSM, first run the help function in  file [`utils.R`](./script/scPSM_utils.R), then run the script [`scPSM_main.R`](./R/scPSM_main.R). Then the function `psm_integrate` will be loaded, we can refer to []() for detail running steps. 
+To perform scPSM, first run the help function in  file [`utils.R`](./R/scPSM_utils.R), then run the script [`scPSM_main.R`](./R/scPSM_main.R). Then the function `psm_integrate` will be loaded, we can refer to [tutorial_pancreas.md](./external_tutorial/scPSM_pancreas.md) for detail running steps. 
 
 ```
 psm_integrate <- function(batches, markers, hvg, k.self=10, k.mnn=10,

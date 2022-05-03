@@ -76,7 +76,7 @@ p2=DimPlot(raw, reduction = "umap", group.by = "tech")+
     labs(title = "Batch of Raw")
 ```
 
-```{r,fig.width=12,fig.height=6}
+```{r,fig.width=14,fig.height=6}
 patchwork::wrap_plots(list(p1,p2),ncol=2)
 ```
 
@@ -130,7 +130,7 @@ psm <- RunPCA(psm, verbose = T)
 psm <- RunUMAP(psm, reduction = "pca", dims = 1:30, check_duplicates = FALSE)
 ```
 
-```{r,fig.width=12,fig.height=6}
+```{r,fig.width=7,fig.height=3}
 # visualization
 p1=DimPlot(psm, reduction = "umap", group.by = "celltype")+
     theme(axis.ticks=element_blank(),
