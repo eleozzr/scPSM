@@ -21,7 +21,7 @@ We provide two ways to run our methods. For the fist one, the authors can instal
 
 ### 3.1 using `scPSM` package
 
-Start with the vignette [online](./vignettes/tutorial.md) in `./vignettes/tutorial.md`.
+Start with the vignette [online](./vignettes/READMD.md) in `./vignettes/README.md`.
 
 ### 3.2 using the main function directly 
 
