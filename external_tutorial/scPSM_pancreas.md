@@ -14,9 +14,14 @@ Remove any cells expressing less than 200 genes, and any genes expressed in less
 
 
 ```r
+#load necessary package
+library(Seurat)
+library(ggplot2)
+
+#read data
 pancreas.data <- readRDS(file = "../inst/extdata/pancreas_expression_matrix.rds")
 # 34363 * 6321
-metadata <- readRDS(file = ".../inst/extdata/pancreas_metadata.rds")
+metadata <- readRDS(file = "../inst/extdata/pancreas_metadata.rds")
 pancreas <- CreateSeuratObject(counts = pancreas.data, meta.data = metadata, min.cells = 30, min.features = 200)
 # 21215 * 6321
 pancreas$percent.mito <- PercentageFeatureSet(object = pancreas, pattern = "^MT-")

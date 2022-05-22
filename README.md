@@ -21,7 +21,7 @@ We provide two ways to run our methods. For the fist one, the authors can instal
 
 ### 3.1 using `scPSM` package
 
-Start with the vignette [online](./vignettes/READMD.md) in `./vignettes/README.md`.
+Start with the vignette [online](./vignettes/README.md) in `./vignettes/README.md`.
 
 ### 3.2 using the main function directly 
 
@@ -51,7 +51,13 @@ psm_integrate <- function(batches, markers, hvg, k.self=10, k.mnn=10,
 
 **Note:** To run the example require the software *R >= 4.0.0*, *batchelor >= 1.4.0*, *BiocNeighbors >= 1.6.0* and *BiocParallel >= 1.22.0*.
 
-## 4 Data
+
+## 4 Simulation Data
+
+The code of generating simulation data for Figure 2 is available in [simulation_data.md](./external_tutorial/simulation_data.md).
+
+
+## 5 Real Data
 
 The original data for the toy example is available in the **`inst/extdata`** folder  
 
@@ -59,7 +65,7 @@ The original data for the toy example is available in the **`inst/extdata`** fol
 - **pancreas_metadata.rds**, Load [`pancreas_metadata.rds`](./inst/extdata/pancreas_metadata.rds) from `./inst/extdata/pancreas_metadata.rds` to get the batch (the "tech" item) and celltype information for all cells .  
 - **HVGs_1000.txt**, [`HVGs_1000.txt`](./inst/extdata/HVGs_1000.txt) can be extracted from *adata.var.index[adata.var["highly_variable"] == True].values* by implementing the python function *sc.pp.highly_variable_genes(adata, n_top_genes=1000, batch_key='tech')* by *impoting `scanpy` as sc*, or from *obj[["RNA"]]@var.features* by implementing the R function *FindVariableFeatures(obj, nfeatures = 1000)* by *library(`Seurat`)*.  
 
-## 5 Cheatsheet
+## 6 Cheatsheet
 
 You can also refer to this cheatsheet to undersand a common workflow
 ![](./inst/extdata/workflow.jpg)
