@@ -54,7 +54,7 @@ psm_integrate <- function(batches, markers, hvg, k.self=10, k.mnn=10,
 
 ## 4 Simulation Data
 
-The code of generating simulation data for Figure 2 is available in [simulation_data.md](./external_tutorial/simulation_data.md).
+The code of generating simulation datasets for Fig 2 and Fig S4 is available in [simulation_data.md](./external_tutorial/simulation_data.md).
 
 
 ## 5 Real Data
